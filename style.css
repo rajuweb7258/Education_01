@@ -1,0 +1,543 @@
+/** 
+Template Name:Eaducation Template
+    1. Deafualt Css.
+    2. Header Section.
+    3. Banner Section.
+    4. About Section.
+    5. Price Section.
+    6. Cta Area Section.
+    7. Footer Area Section.
+
+**/
+
+
+/* Start Deafualt Css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.btn a{
+    color: #fff;
+}
+
+.btn{
+    border-radius: 7px;
+    display: inline-block;
+    background-color: #0fb2ed;
+    padding: 10px 20px !important;
+    border: none;
+    color: #fff !important;
+}
+
+.btn a{
+    color: #fff;
+    margin-left: -20px;
+}
+
+/* Case Stady Before*/
+    .case-study-preview-1 {background-image: url(assets/img/Banner_area_Section-2.jpg);}
+    .case-study-preview-2 {background-image: url(assets/img/Banner_area_Section-3.png);}
+    .case-study-preview-3 { background-image: url(assets/img/Banner_area_Section-4.png);}
+/* Case Stady Before*/
+
+/* Case Stady After*/
+    .case-study-bg-1:after { background-image: url(assets/img/Banner_area_Section.jpg);background-position: center;background-size: cover;}
+    .case-study-bg-2:after { background-image: url(assets/img/blog-1.jpg);background-position: center;background-size: cover;}
+    .case-study-bg-3:after { background-image: url(assets/img/blog-2.jpg);background-position: center;background-size: cover;}
+/* Case Stady After*/
+
+.cta-bg {background-image: url(assets/img/cta-bg-01.png);}
+
+/* End Deafualt Css */
+
+/* Start Header Section */
+.header_area{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.144);
+}
+
+.container{
+    width: 1150px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.header .logo a, .footer-item .logo a{
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #843AF5;
+}
+.main-menu ul{
+    display: flex;
+    align-items: center;
+}
+.main-menu ul li{
+    list-style: none;
+    margin-left: 20px;
+    
+}
+.main-menu ul li a{
+    font-size: 15px;
+    font-weight: 600;
+    color: #646262;
+}
+
+.main-menu ul li a:hover {
+    color: #0FB2ED;
+}
+
+a.btn:hover {
+    background: #21386C;
+    transition: .3s;
+}
+/* End Header Section */
+
+/* Start Banner Section */
+.banner_area{
+    background-color: #F0FFF0;
+}
+.banner-boxed{
+    display: flex;
+    align-items: center;
+    height: 550px;
+}
+.banner-boxed .banner-content h2{
+    font-size: 20px;
+    font-weight: 600;
+    color: #082d35;
+}
+.banner-boxed .banner-content h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 55px;
+    padding: 15px 0;
+}
+.banner-boxed .banner-content p{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.banner-boxed .banner-content .green-highlight{
+    color: #24ADF3;
+}
+.banner-boxed .banner-content button{
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    background: none;
+}
+.banner-boxed .banner-img{
+    text-align: right;
+}
+.banner-boxed .banner-img img{
+    width: 80%;
+}
+/* End Banner Section */
+
+/* About Section */
+.about-athor {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 70px;
+}
+
+.content-detail h4 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+.content-detail p {
+    margin-bottom: 35px;
+}
+
+.content-section {
+    padding: 30px;
+}
+/* About Banner Section */
+
+/* Start About Section */
+.section-title {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.subtitle {
+    padding-top: 30px;
+}
+
+.section-title h2 {
+    margin-bottom: 40px;
+    font-size: 38px;
+}
+
+span.boxed-text {
+    background: #fff;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border-radius: 0 50px;
+}
+
+h4.text-content {
+    color: #fff;
+}
+
+#case-study {
+    background: #F0FFF0;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.case-study-box-preview {
+    display: table;
+    height: 300px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.case-study-link-tablecell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+    transform: scale(.8);
+}
+
+.case-study-link-tablecell:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    opacity: .8;
+
+}
+
+.case-study-link-tablecell .boxed-btn {
+    background: #fff;
+    color: #333;
+    padding: 10px 25px;
+    border-radius: 7px;
+}
+
+.case-study-link-tablecell .boxed-btn:hover {
+    background: #21386C;
+    color: #fff;
+    transition: .3s;
+}
+
+.case-study-style-2 {
+    text-align: center;
+    width: 30%;
+    display: inline-block;
+    padding: 15px;
+}
+
+.case-study-style-2 h4 {
+    margin-top: 20px;
+}
+
+.case-study-style-2 h4 span {
+    display: block;
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f00000;
+}
+
+.case-study-style-2:hover .case-study-link-tablecell {
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+}
+/* End About Section */
+
+/* Start Price Section */
+.price-area {
+    margin-top: 80px;
+    padding-bottom: 80px;
+}
+
+.price-heading {
+    background: #fbfbfb;
+    padding: 20px;
+}
+
+a.boxed-btn {
+    background: #23AAF2;
+    line-height: 5;
+    padding: 10px 80px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+p.pricing-count {
+    font-size: 40px;
+    color: #24ADF3;
+}
+
+.single-pricing-box{
+    padding: 20px 0 20px;
+    margin: 16px;
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    border: 1px solid#dbdbdb;
+    background: #fff;
+    
+}
+
+p.pricing-count {
+    background: #23AAF2;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 0px 50px;
+}
+
+.pricing-content {
+    line-height: 2;
+}
+
+.price-heading h4 {
+    font-size: 28px;
+}
+
+.single-pricing-box p {
+    margin-top: 10px;
+}
+
+a.boxed-btn:hover {
+    background: #21386C;
+    transition: .3s;
+}
+
+.single-pricing-box:hover, .single-pricing-box:hover .price-heading {
+    border-color: #0db5e9;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transform: translateY(-10px);
+    transition: all 3s;
+}
+
+.single-pricing-box:hover {
+    box-shadow: -2px 1px 14px 3px #ddd;
+    transition: .3s;
+}
+/* End Price Section */
+
+/* Cta Area Section */
+.cta-area {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    padding: 90px 0;
+}
+
+.cta-boxed h2 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.cta-boxed p {
+    color: #fff;
+    margin-bottom: 50px;
+}
+/* Cta Area Section */
+
+/* Start Footer area section*/
+.footer-area {
+    padding-top: 100px;
+    background: #F0FFF0;
+    padding-bottom: 90px;
+}
+
+.footer-boxed {
+    display: inline-flex;
+}
+
+.single-footer-boxed, .single-footer-boxed-2, .single-footer-boxed-3, .single-footer-boxed-4 {
+    margin-right: 40px;
+}
+
+.aboutus h4 {
+    text-transform: uppercase;
+    color: #000;
+    font-size: 24px;
+}
+
+.aboutus p {
+    color: #8E8C8C;
+    font-size: 14px;
+    margin-bottom: 35px;
+}
+
+.sep {
+    border: 1px solid#22A7F2;
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    border: 1px solid#dbdbdb;
+    width: 65%;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+.footer-logo:hover {
+    border: 1px solid#0db5e9;
+    transition: .3s;
+}
+
+.footer-boxed p {
+    color: #646262;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.footer-logo h4:hover {
+    color: #0db5e9;
+    transition: .3s;
+}
+
+.navigatton ul {
+    margin:  0;
+    padding:  0;
+    list-style:  none;
+}
+
+.navigatton li {
+    padding: 4px;
+    color: #8E8C8C;
+}
+
+.list-icon {
+    margin-right: 15px;
+}
+
+.navigatton li a {
+    color: #8E8C8C;
+    font-weight: 600;
+}
+
+.navigatton ul li a:hover {
+    color: #0db5e9;
+    padding-left: 15px;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.navigatton h4 {
+    color: #000;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.last-news h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #000;
+}
+
+.last-news p {
+    color:  #8E8C8C;
+    font-size:  15px;
+}
+
+p.date {
+    color: #7B7A7A;
+    font-size: 15px;
+}
+
+.last-news-one p {
+    font-size:  15px;
+    color: #7B7A7A;
+}
+
+.contact-us {
+    color: #000;
+}
+
+.contact-us h4 {
+    font-size:  24px;
+    text-transform:  uppercase;
+}
+
+.contact-us p {
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.form-element input[type=text] {
+    width: 82%;
+    padding: 17px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.footer-secation {
+    border-top: 1px solid#dbdbdb;
+    padding-top: 25px;
+    margin-top: 25px;
+    padding-bottom: 15px;
+}
+
+.footer-secation p {
+    font-size:  15px;
+    color: #666;
+    font-weight: 600;
+}
+
+.footer-secation {
+    text-align: center;
+}
+
+.footer-copyright {
+    margin-top: -25px;
+}
+/* End Footer Area Section */
+
+
+
